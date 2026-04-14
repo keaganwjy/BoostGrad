@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoostGrad | Tingkatkan Karirmu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#tentang" class="logo-link">
+                <img src="logo_BoostGrad.png" alt="BoostGrad Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#harga">Harga</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="tentang">
+        <div class="container">
+            <h2>Langkah Awal Menuju Karir Impian</h2>
+            <p>BoostGrad hadir untuk membantu mahasiswa dan fresh graduate tampil maksimal. Kami menyediakan layanan perbaikan CV dan simulasi interview agar kamu siap menghadapi dunia kerja dengan percaya diri.</p>
+            <a href="#layanan" class="btn btn-primary">Lihat Layanan Kami</a>
+        </div>
+    </header>
+
+    <section class="services" id="layanan">
+        <div class="container">
+            <h2 class="section-title">Fitur & Layanan</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="icon">📄</div>
+                    <h3>CV Booster</h3>
+                    <p>Jasa cek dan perombakan CV agar lebih profesional, menonjolkan potensi terbaikmu, dan ramah terhadap sistem ATS rekruter.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🗣️</div>
+                    <h3>Interview Booster</h3>
+                    <p>Simulasi wawancara kerja 1-on-1 dengan feedback komprehensif. Latih mental dan cara menjawab pertanyaan menjebak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="harga">
+        <div class="container">
+            <h2 class="section-title">Pilihan Paket Terjangkau</h2>
+            <div class="grid-container">
+                <div class="pricing-card">
+                    <h3>CV Booster</h3>
+                    <p class="price">Rp 25.000</p>
+                    <ul>
+                        <li>Review CV Menyeluruh</li>
+                        <li>Perbaikan Format & Diksi</li>
+                        <li>Revisi 1x</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="pesanLayanan('CV Booster')">Pilih Paket</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Interview Booster</h3>
+                    <p class="price">Rp 40.000</p>
+                    <ul>
+                        <li>Sesi Simulasi 30 Menit</li>
+                        <li>Feedback Komprehensif</li>
+                        <li>Tips Menjawab Pertanyaan</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="pesanLayanan('Interview Booster')">Pilih Paket</button>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="badge">Paling Laris</div>
+                    <h3>Double Pack</h3>
+                    <p class="price">Rp 60.000</p>
+                    <ul>
+                        <li>Semua Fitur CV Booster</li>
+                        <li>Semua Fitur Interview Booster</li>
+                        <li>Prioritas Penjadwalan</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="pesanLayanan('Double Pack')">Pilih Paket</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 BoostGrad. Siap mewujudkan karir cemerlangmu.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

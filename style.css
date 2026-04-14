@@ -1,0 +1,254 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9fafb;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Warna Utama - Diekstrak dari Logo BoostGrad */
+:root {
+    --primary-teal: #00D2D2;    /* Teal cerah dari atas roket */
+    --accent-purple: #AB13E6;   /* Ungu/magenta dari bawah roket */
+    --dark-teal: #00AAAA;      /* Teal gelap untuk hover primer */
+    --neutral-gray: #f3f4f6;   /* Abu-abu terang netral (bawaan) */
+    --dark-gray: #4b5563;      /* Abu-abu gelap netral (bawaan) */
+}
+
+/* Typography & Tombol */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--dark-gray);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-teal); /* Gunakan Teal sebagai primer */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-teal);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary-teal);
+    color: var(--primary-teal);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-teal);
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+/* Menampilkan Gambar Logo di Navbar */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    max-height: 90px; /* Atur tinggi gambar agar pas dengan navbar */
+    width: auto;      /* Biarkan lebar menyesuaikan secara proporsional */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-teal);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(243, 244, 246, 0.9), rgba(243, 244, 246, 0.9)), url('https://via.placeholder.com/1200x600?text=Graduation') center/cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: var(--primary-teal); /* Gunakan Teal untuk judul hero */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: var(--dark-gray);
+}
+
+/* Grid Layout Umum */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Layanan Section */
+.services {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.card {
+    background: var(--neutral-gray);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: var(--primary-teal); /* Gunakan Teal untuk judul kartu */
+    margin-bottom: 10px;
+}
+
+/* Harga Section */
+.pricing {
+    padding: 80px 0;
+    background-color: var(--neutral-gray);
+}
+
+.pricing-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.pricing-card h3 {
+    color: var(--dark-gray);
+    font-size: 1.5rem;
+}
+
+.pricing-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-teal); /* Gunakan Teal untuk harga paket standar */
+    margin: 20px 0;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+    color: var(--dark-gray);
+}
+
+/* Paket Populer - Gunakan warna aksen Ungu */
+.pricing-card.popular {
+    border: 2px solid var(--accent-purple);
+    transform: scale(1.05);
+}
+
+.pricing-card.popular .badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent-purple);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.pricing-card.popular .price {
+    color: var(--accent-purple);
+}
+
+.pricing-card.popular button.btn-primary {
+    background-color: var(--accent-purple);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-gray);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsif untuk Layar Kecil */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Menyembunyikan menu di mobile untuk kesederhanaan */
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .pricing-card.popular {
+        transform: scale(1);
+    }
+}
